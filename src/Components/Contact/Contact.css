@@ -1,0 +1,18 @@
+.form{
+    animation: khalid 1.5s;
+}
+@keyframes khalid {
+    from{
+        transform: translateX(100%);
+    }
+    
+}
+.SOcial{
+    animation:  Social 1.5s;
+}
+@keyframes Social {
+    from{
+        transform: translateY(100%);
+    }
+    
+}

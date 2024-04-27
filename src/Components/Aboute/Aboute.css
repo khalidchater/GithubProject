@@ -1,0 +1,65 @@
+.aboute_Card{
+    background: rgb(78, 50, 112);
+    border: 1px solid transparent;
+}
+img{
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: all 0.5s ease; 
+
+}
+.container {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1024px) {
+    div.container{
+       display: flex;
+       flex-direction: column;
+    }
+   
+    .About_content{
+        padding-top: 40px;
+        margin: auto;
+        display: block;
+    }
+     .MyCart{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    p{
+        font-size:2vh;
+
+    }
+     
+   
+
+}
+.transf{
+    animation-name: Imagee;
+    animation-duration: 1.5s;
+
+}
+@keyframes Imagee{
+    from {
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.About_content{
+    animation-name: Contentt;
+    animation-duration: 1.5s;
+}
+@keyframes Contentt {
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}

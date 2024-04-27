@@ -1,0 +1,83 @@
+/* body{
+    background-color: black
+} */
+.Navbar{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    
+   
+}
+.Menu{
+    display: flex;
+    justify-content:space-between;
+    font-weight: bold;
+    color:  white;
+    gap: 60px;
+    position: relative;
+    transition: all 3.3s ease;
+}
+.Navbar li:hover ,
+.Navbar li .active  {
+    color: rgb(245, 239, 239);
+    
+}
+.Navbar li:hover::after,
+.Navbar li .active::after {
+    content: "";
+    width: 15%;
+    height: 3px;
+    background-color: rgb(114, 6, 136);
+   margin-left: -50px;
+    position: absolute;
+    bottom: -5px;
+}
+.Close_btn,
+.show_Btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+   
+    .Menu{
+      
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 75vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.5rem;
+      background-color: rgb(117, 6, 117);
+      opacity: 20;
+      z-index: 999;
+      transition: 0.5s;
+      transform: translateY(-600vh);
+    }
+    
+    .responsive{
+        transform: none;
+    }
+    
+   
+    .Close_btn{
+        display: block;
+    }
+    .show_Btn{
+        display: block;
+       
+    }
+    
+
+}
+
+

@@ -1,0 +1,66 @@
+body{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1180px) {
+    .container {
+         display: flex;
+         justify-content: space-around ;
+         flex-direction: column;
+        
+        
+    }
+    .Image{
+        padding-top: 50px;
+        width: 300px;
+    }
+    .Title{
+        font-size: 10px;
+
+    }
+    .textAnimation{
+        font-size: 20px !important;
+    }
+    .buttom{
+        display: flex;
+        padding: 0 0 0 0;
+    }
+    .responsive{
+        font-size: 25px !important;
+    }
+
+}
+.Image{
+    animation: imgFloat 7s ease-in-out infinite;
+}
+@keyframes imgFloat {
+    50% {
+            transform: translateY(30px);
+            border-radius: 55% 55% 65% 55%;
+        }
+
+}
+.animation{
+    animation-name: KHALID;
+    animation-duration:  1.5s;
+}
+@keyframes KHALID {
+    from{
+        transform:translateX(-300px) ;
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.Title{
+    animation-name: TESS;
+    animation-duration:  1.5s;
+}
+@keyframes TESS {
+    from{
+        transform:translateX(-300px) ;
+    }
+    to{
+        transform: translateX(0);
+    }
+}
